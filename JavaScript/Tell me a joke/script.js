@@ -1,0 +1,58 @@
+const jokes = [
+    "Why don’t Indians trust stairs? Because they are always up to something!",
+    "Why did the samosa go to school? To become a little 'sharp'!",
+    "Why don’t IT professionals play cricket? Because they’re scared of getting 'caught' and 'stumped'.",
+    "Why did the Golgappa break up with the Bhel Puri? Because it found someone ‘chat-pata’!",
+    "Why don’t mosquitoes like flying near South Indians? Because they always say ‘Shoo! Shoo!’.",
+    "Why did the chai go to therapy? It had too many ‘issues’!",
+    "Why did the software engineer refuse to dance? Because he didn’t want to face any ‘runtime errors’!",
+    "Why don’t desis like fast food? Because they prefer ‘ghar ka khana’!",
+    "Why do Indians never get lost? Because they always have a ‘desi’ GPS – the aunties’ directions!",
+    "Why was the math book worried? It had too many ‘calculations’!",
+    "Why don’t Punjabis play hide and seek? Because good luck hiding from a 'balle balle'!",
+    "Why was the biryani always calm? Because it’s always at ‘dum’!",
+    "Why don't Bengalis use elevators? Because they prefer to 'scale' new heights.",
+    "Why do South Indians never feel cold? Because they always have ‘filter coffee’ to keep them warm!",
+    "Why did the dosa get promoted? Because it was always on a 'roll'!",
+    "Why did the mobile phone go to the temple? To get better ‘network’!",
+    "Why don’t Indians like Wi-Fi? Because they prefer ‘wired’ connections!",
+    "Why don’t Indians ever give up? Because they believe in 'Never Say Chai'!",
+    "Why do Delhiites love winter? So they can flaunt their 'sweater weather'.",
+    "Why did the tomato refuse to join the curry? It was afraid of becoming 'tangy'.",
+    "Why was the coconut always calm? Because it was used to handling 'pressure'!",
+    "Why don’t Gujaratis need a gym? Because they are always ‘flexing’ their business skills!",
+    "Why did the pani puri go to the party? To get ‘jal’!",
+    "Why was the rickshaw so happy? Because it was always ‘metering’ new people.",
+    "Why did the chaiwala become famous? Because he had ‘tea-rific’ ideas!",
+    "Why don't Indians use alarms? Because they wake up to the smell of ‘chai’!",
+    "Why did the mango break up with the banana? It found a 'peach' of a fruit!",
+    "Why don’t South Indians play cricket? Because they prefer to ‘bat’ for their food!",
+    "Why do Indians love WhatsApp? Because it’s full of ‘forward’ thinking!",
+    "Why was the mobile phone happy? It had full 'bars' at India Gate!",
+    "Why did the engineer refuse to cook? He didn’t want to face any ‘kitchen bugs’!",
+    "Why do Mumbaikars never get lost? Because they have the ‘local’ knowledge!",
+    "Why was the biryani so proud? Because it had ‘layers’ of success!",
+    "Why do desis love weddings? Because it's the perfect time to 'suit up'!",
+    "Why did the rickshaw refuse to move? It was tired of ‘rickshaw wala’!",
+    "Why don’t Indians play video games? Because they’re busy playing ‘real-life’ roles!",
+    "Why was the roti always in a hurry? Because it had to ‘roll’ with it!",
+    "Why did the engineer always carry a pen drive? Because he liked to ‘stick’ to his plans!",
+    "Why was the tandoor so famous? Because it always had the ‘hottest’ deals!",
+    "Why don’t Indians need Google Maps? Because they trust the ‘left-right-left’ method!",
+    "Why was the Ladoo feeling left out? Because the Jalebi got all the 'attention'!",
+    "Why did the chai break up with the coffee? It found a ‘sweeter’ deal!",
+    "Why do Indians love trains? Because they love a good ‘chuk chuk’ ride!",
+    "Why don’t Punjabis need alarms? Because they wake up to the sound of ‘dhol’!",
+    "Why did the fridge go to school? To learn how to keep its ‘cool’!",
+    "Why was the curry so popular? Because it was always in a ‘hot’ spot!",
+    "Why did the Golgappa break up with the Chutney? It needed more 'space'!",
+    "Why don’t South Indians play board games? Because they’d rather 'plate' their meals!",
+    "Why did the IT guy go to the temple? To find some 'inner peace' from debugging!"
+  ];
+  
+  
+  const joke = jokes[Math.floor(Math.random() * jokes.length)];
+  
+  joke_tag = document.getElementById("joke")
+  
+  joke_tag.innerHTML = `Joke: ${joke}`

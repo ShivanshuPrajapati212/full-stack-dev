@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --HEADER-BG-COLOR: blueviolet;
+    --HEADER-COLOR: white;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: wheat;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.nav-header-line {
+    background-color: var(--HEADER-BG-COLOR);
+    color: var(--HEADER-COLOR);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+
+.nav-header-line h1 {
+    font-size: 2.5rem;
+}
+
+.nav-header-line .menu-button {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.menu-icon, .menu-icon::after, .menu-icon::before {
+    background-color: var(--HEADER-COLOR);
+    width: 50px;
+    height: 7px;
+    border-radius: 3px;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+
+.menu-icon::after, .menu-icon::before {
+    content: "";
+}
+
+.menu-icon::after {
+    transform: translate(0,14px);
+}
+.menu-icon::before {
+    transform: translate(0,-14px);
+}
+
+:is(header:hover, header:focus-within) .menu-icon{
+    transform: rotate(180deg);
+    background-color: transparent;
+}
+:is(header:hover, header:focus-within) .menu-icon::before{
+    transform: rotate(45deg);
+}
+:is(header:hover, header:focus-within) .menu-icon::after{
+    transform: rotate(-45deg);
+}
+:is(header:hover, header:focus-within) nav{
+    display: block;
+}
+
+
+nav {
+    display: none;
+    background-color: var(--HEADER-BG-COLOR);
+    font-size: 2rem;
+    transform-origin: top center;
+    animation: showNav 0.5s ease forwards;
+}
+
+nav li {
+    display: flex;
+    list-style-type: none;
+    padding: 5px;
+    border-top: 1px solid var(--HEADER-COLOR);
+    align-items: center;
+    justify-content: center;
+}
+
+nav li a {
+    text-decoration: none;
+    color: var(--HEADER-COLOR);
+    font-weight: bold;
+}
+
+nav li a:hover, a:focus {
+    transform: scale(1.2);
+    transition: all 0.3s ;
+}
+
+
+@keyframes showNav {
+    0% {
+        transform: scaleY(0);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+}

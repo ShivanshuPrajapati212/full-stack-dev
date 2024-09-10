@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: wheat;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex-grow: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading {
+    /* background-color: blueviolet; */
+    width: 100px;
+    height: 100px;
+    border: 10px solid white;
+    border-top-color: blueviolet;
+    border-left-color: blueviolet;
+    border-radius: 50%;
+    animation: spin 0.8s ease-in infinite forwards;
+}
+
+.text{
+    display: flex;
+     width: 50px;
+     height: 20px;
+     color: blueviolet;
+     font-size: 2rem;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     margin-top: 60px;
+     font-weight: 900;
+     letter-spacing: 1rem;
+     /* animation: text-loading 0.8s ease-in infinite forwards; */
+}
+
+.text span {
+    animation: text-loading 0.8s ease-in infinite forwards;
+}
+
+.text span:first-child {
+    animation: text-loading 1s ease-in infinite forwards;
+}
+.text span:nth-child(2) {
+    animation: text-loading 1s ease-in infinite forwards;
+    animation-delay: 0.2s;
+}
+
+.text span:last-child {
+    animation: text-loading 1s ease-in infinite forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes text-loading {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        margin-top: 100px;
+        opacity: 1;
+    }
+    100% {
+        margin-top: 100px;
+        opacity: 0;
+    }
+    
+}

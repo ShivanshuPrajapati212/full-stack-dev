@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: blueviolet;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+    color: white;
+  }
+  
+  .joke-container {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+  }
+  
+  #joke {
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+  }

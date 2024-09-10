@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.time{
+    font-size: 200px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.date {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+}
